@@ -17,7 +17,7 @@ class PostController extends Controller
     {
         // $posts = Post::latest()->get();
         // return view('posts.index', compact($posts));
-        
+
         $posts = Post::all();
         return view ('posts.index', compact('posts'));
     }
@@ -29,7 +29,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('posts.create');
     }
 
     /**
